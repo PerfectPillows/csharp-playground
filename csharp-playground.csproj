@@ -9,8 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\advent-of-code\advent-of-code.csproj" />
-    <ProjectReference Include="..\leetcode\leetcode.csproj" />
+    <Compile Remove="src\**" />
+    <EmbeddedResource Remove="src\**" />
+    <None Remove="src\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="src\advent-of-code\advent-of-code.csproj" />
+    <ProjectReference Include="src\leetcode\leetcode.csproj" />
   </ItemGroup>
 
 </Project>
